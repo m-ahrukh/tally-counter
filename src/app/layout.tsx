@@ -15,9 +15,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet" />
       </head>
-      <body
-        className={`sofia-regular antialiased`}
-      >
+      <body className={`sofia-regular antialiased`}>
         {children}
       </body>
     </html >

@@ -41,14 +41,14 @@ export default function Counter() {
         {count}
       </div>
       <div className='flex justify-center gap-2 mb-6'>
-        <button onClick={increment} className="flex items-center justify-center w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg transition-transform transform hover:scale-105">
+        <button  aria-label='plus' onClick={increment} className="flex items-center justify-center w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg transition-transform transform hover:scale-105">
           <FaPlus size={24} />
         </button>
-        <button onClick={decrement} className="flex items-center justify-center w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 bg-red-500 hover:bg-red-600 text-white rounded-full shadow-lg transition-transform transform hover:scale-105">
+        <button aria-label='minus' onClick={decrement} className="flex items-center justify-center w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 bg-red-500 hover:bg-red-600 text-white rounded-full shadow-lg transition-transform transform hover:scale-105">
           <FaMinus size={24} />
         </button>
       </div>
-      <button onClick={reset} className="flex items-center justify-center w-14 h-14 md:w-16 md:h-16 lg:w-20 lg:h-20 bg-blue-500 hover:bg-blue-600 text-white rounded-full shadow-lg transition-transform transform hover:scale-105 mx-auto">
+      <button  aria-label='reset' onClick={reset} className="flex items-center justify-center w-14 h-14 md:w-16 md:h-16 lg:w-20 lg:h-20 bg-blue-500 hover:bg-blue-600 text-white rounded-full shadow-lg transition-transform transform hover:scale-105 mx-auto">
         <FaRedo size={28} />
       </button>
     </div>
