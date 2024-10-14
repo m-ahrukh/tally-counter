@@ -1,3 +1,75 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* globals.css */
+
+/* Basic Styles */
+body {
+  font-family: var(--font-sofia, cursive);
+  /* Make sure font applies globally */
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: #f0f0f0;
+}
+
+.sofia-regular {
+  font-family: "Sofia", cursive;
+  font-weight: 400;
+}
+
+/* Responsive Typography */
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  body {
+    font-size: 0.9rem;
+  }
+}
+
+/* Tablet Styles */
+@media (min-width: 601px) and (max-width: 1024px) {
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  body {
+    font-size: 1rem;
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 1025px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  body {
+    font-size: 1.1rem;
+  }
+}
